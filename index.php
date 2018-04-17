@@ -306,17 +306,18 @@
             <div class="container">
                 <div class="row">
                     <form method="post" action="mailer.php" class="contact-form">
-                            <!--<div class="row justify-content-center">
+                            <div class="row justify-content-center">
                                 
-                                <?php> 
-                                    <div class="form-messages seccess">
-                                        Obrigado! A sua mensagem foi enviada.
-                                    </div>
-                                    <div class="form-messages error">
-                                        Ops! Algo correu mal. Por favor, tente novamente.
-                                    </div>
+                                <?php>
+                                    if($_GET['success'] == 1) {
+                                        echo "<div class=\"form-messages seccess\">Obrigado! A sua mensagem foi enviada.</div>";
+                                    }
+                                    
+                                    if($_GET['success'] == -1) {
+                                        echo "<div class=\"form-messages error\">Ops! Algo correu mal. Tente novamente</div>";
+                                    }
                                 ?>
-                            </div>-->
+                            </div>
                         
                         <div class="row justify-content-center">
                             

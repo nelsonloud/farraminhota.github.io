@@ -114,8 +114,51 @@ body {
     padding-bottom: 5%;
 }
 
+/* **************** videos *************************/
+
 .videosSpc {
     padding-bottom: 5%;    
+}
+
+/* **************** contactos *************************/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #868686;
+}
+
+textarea {
+    height: 100px;
+    
+}
+
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.seccess {
+    text-align: center;
+    background-color: #00c400;
+}
+
+.error {
+    text-align: center;
+    background-color: #a20000;
 }
 
 
